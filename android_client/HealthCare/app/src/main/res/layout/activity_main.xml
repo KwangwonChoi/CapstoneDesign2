@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    tools:context=".Activities.MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/main_log_btn"
+            android:src="@drawable/appointment"
+            android:padding="10dp"
+            android:background="@color/backGround"/>
+
+        <ImageButton
+            android:id="@+id/main_inq_btn"
+            android:src="@drawable/doctor"
+            android:padding="10dp"
+            android:background="@color/backGround"/>
+
+        <ImageButton
+            android:id="@+id/main_iptv_btn"
+            app:srcCompat="@drawable/cctv"
+            android:padding="10dp"
+            android:background="@color/backGround"
+            />
+
+    </GridLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
